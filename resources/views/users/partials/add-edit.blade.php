@@ -82,6 +82,8 @@
 </div>
 <br><label for="isQuotaPaga">Quota Paga</label>
 <input type="checkbox" id="quota_paga" name="quota_paga" value="1" checked>
+<div>Olá</div>
+<div>Olá</div>
 <br><label for="isQuotaPaga">Utilizador Ativo</label>
 <input type="checkbox" id="ativo" name="ativo" value="1" checked>
 <br><label for="isQuotaPaga">Membro da Administração</label>
