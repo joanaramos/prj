@@ -258,12 +258,28 @@
         <!-- SECÇÃO DO MENU COMUM-->
           <li class="treeview">
             <a href="#">
+              <i class="fa fa-dashboard"></i> <span>Aeronaves</span>
+              <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+            @if(Auth::user()->isAdministrator())
+              <ul class="treeview-menu">
+                <li><a href="{{route('users.create')}}"><i class="fa"></i> Adicionar Aeronave</a></li>
+              </ul>
+            @endif
+            <ul class="treeview-menu">
+              <li><a href="{{route('users.index')}}"><i class="fa"></i> Consultar Aeronave</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
               <i class="fa fa-dashboard"></i> <span>Utilizadores</span>
               <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
             </a>
-          @if(Auth::user()->direcao == 1)
+          @if(Auth::user()->isAdministrator())
               <ul class="treeview-menu">
                 <li><a href="{{route('users.create')}}"><i class="fa"></i> Adicionar Utilizador</a></li>
               </ul>
