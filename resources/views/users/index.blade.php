@@ -13,7 +13,7 @@
     <table class="table table-striped">
     <thead>
         <tr>
-            <th>Num Socio</th>
+            <th>Nº Socio</th>
             <th>Nome</th>
             <th>Data de nascimento</th>
             <th>Tipo</th>
@@ -43,6 +43,6 @@
     @endforeach
     </table>
 @else
-    <h2>No users found</h2>
+    <h2>Não foram encontrados users.</h2>
 @endif
 @endsection
