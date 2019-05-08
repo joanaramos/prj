@@ -28,42 +28,37 @@ class AeronaveController extends Controller
 
     public function store(StoreAeronaveRequest $request)
     {
-        $this->authorize('create', User::class);
 
-        $user = new User();
-        $user->fill($request->all());
-        $user->password = Hash::make($request->password);
-        $user->save();
+        $aeronave = new Aeronave();
+        $aeronave->fill($request->all());
+        $aeronave->save();
 
         return redirect()
-            ->route('users.index')
-            ->with('success', 'User added successfully!');
+            ->route('aeronaves.index')
+            ->with('success', 'Aeronave adicionada com sucesso!');
     }
 
-    public function edit(User $user)
+    public function edit(Aeronave $aeronave)
     {
-        $this->authorize('update', $user);
-        return view('users.edit', compact('user'));
+        $this->authorize('update', $aeronave);
+        return view('aeronaves.edit', compact('aeronave'));
     }
 
-    public function update(UpdateAeronaveRequest $request, User $user)
+    public function update(UpdateAeronaveRequest $request, Aeronave $aeronave)
     {
-        $this->authorize('update', $user);
-        $user->fill($request->validated());
-        $user->save();
+        $aeronave->fill($request->validated());
+        $aeronave->save();
 
         return redirect()
-            ->route('users.index')
-            ->with('success', 'User updated successfully!');
+            ->route('aeronave.index')
+            ->with('success', 'Aeronave atualizada com sucesso!');
     }
 
-    public function destroy(User $user)
+    public function destroy(Aeronave $aeronave)
     {
-        $this->authorize('delete', $user);
-
-        $user->delete();
+        $aeronave->delete();
         return redirect()
-            ->route('users.index')
-            ->with('success', 'User deleted successfully!');
+            ->route('aeronave.index')
+            ->with('success', 'Aeronave eliminada com sucesso!');
     }
 }
