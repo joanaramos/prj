@@ -1,6 +1,6 @@
 {{csrf_field()}}
 <div class="form-group">
-    <label for="inputFullname">Name</label>
+    <label for="inputFullname">Nome</label>
     <input
         type="text" class="form-control"
         name="name" id="inputName"
@@ -82,8 +82,10 @@
 </div>
 <br><label for="isQuotaPaga">Quota Paga</label>
 <input type="checkbox" id="quota_paga" name="quota_paga" value="1" checked>
+
 <br><label for="isQuotaPaga">Utilizador Ativo</label>
 <input type="checkbox" id="ativo" name="ativo" value="1" checked>
+
 <br><label for="isQuotaPaga">Membro da Administração</label>
 <input type="checkbox" id="direcao" name="direcao" value="1" >
 
