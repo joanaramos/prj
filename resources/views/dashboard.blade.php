@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -265,11 +265,11 @@
             </a>
             @if(Auth::user()->isAdministrator())
               <ul class="treeview-menu">
-                <li><a href="{{route('users.create')}}"><i class="fa"></i> Adicionar Aeronave</a></li>
+                <li><a href="{{route('aeronaves.create')}}"><i class="fa"></i> Adicionar Aeronave</a></li>
               </ul>
             @endif
             <ul class="treeview-menu">
-              <li><a href="{{route('users.index')}}"><i class="fa"></i> Consultar Aeronave</a></li>
+              <li><a href="{{route('aeronaves.index')}}"><i class="fa"></i> Consultar Aeronave</a></li>
             </ul>
           </li>
           <li class="treeview">

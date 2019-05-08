@@ -1,11 +1,11 @@
 @extends('master')
 
-@section('title', 'List users')
+@section('title', 'Lista de Aeronaves')
 
 @section('content')
-    @can('create', App\User::class)
+    @can('create', App\Aeronave::class)
         <div>
-            <a class="btn btn-primary" href="{{route('users.create')}}">Add user</a>
+            <a class="btn btn-primary" href="{{route('aeronaves.create')}}">Add user</a>
         </div>
     @endcan
 
@@ -32,10 +32,10 @@
                     <td>{{$aeronave->preco_hora}}</td>
                     <td>
                         @can('update', $aeronave)
-                            <a class="btn btn-xs btn-primary" href="{{route('users.edit', $aeronave)}}">Edit</a>
+                            <a class="btn btn-xs btn-primary" href="{{route('$aeronaves.edit', $aeronave)}}">Edit</a>
                         @endcan
                         @can('delete', $aeronave)
-                            <form action="{{route('users.destroy', $user)}}" method="POST" role="form" class="inline">
+                            <form action="{{route('aeronaves.destroy', $aeronave)}}" method="POST" role="form" class="inline">
                                 {{ method_field('DELETE') }}
                                 {{ csrf_field() }}
                                 <button type="submit" class="btn btn-xs btn-danger">Delete</button>
