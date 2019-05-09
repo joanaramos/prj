@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Aeronave extends Model
 {
+    use SoftDeletes;
+
     // Overrides table name
     protected $table = 'aeronaves';
 

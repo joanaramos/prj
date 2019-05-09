@@ -32,7 +32,7 @@
                     <td>{{$aeronave->preco_hora}}</td>
                     <td>
                         @can('update', $aeronave)
-                            <a class="btn btn-xs btn-primary" href="{{route('$aeronaves.edit', $aeronave)}}">Edit</a>
+                            <a class="btn btn-xs btn-primary" href="{{route('aeronaves.edit', $aeronave)}}">Edit</a>
                         @endcan
                         @can('delete', $aeronave)
                             <form action="{{route('aeronaves.destroy', $aeronave)}}" method="POST" role="form" class="inline">

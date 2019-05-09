@@ -34,6 +34,11 @@ Route::put('aeronaves/{aeronave}', 'AeronaveController@update')->name('aeronaves
 Route::delete('aeronaves/{aeronave}', 'AeronaveController@destroy')->name('aeronaves.destroy');
 
 //-----------------------------------------------------------------------------------
+//Rotas para Movimentos
+
+
+
+//----------------------------------------------------------------------------------------------
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Auth::routes();

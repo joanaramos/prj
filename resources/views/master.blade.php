@@ -130,7 +130,7 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">{{ Auth::user()->name }}</span>
+                            <span class="hidden-xs">{{ Auth::user()->nome_informal }}</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
@@ -227,11 +227,11 @@
                     </a>
                     @if(Auth::user()->isAdministrator())
                         <ul class="treeview-menu">
-                            <li><a href="{{route('users.create')}}"><i class="fa"></i> Adicionar Aeronave</a></li>
+                            <li><a href="{{route('aeronaves.create')}}"><i class="fa"></i> Adicionar Aeronave</a></li>
                         </ul>
                     @endif
                     <ul class="treeview-menu">
-                        <li><a href="{{route('users.index')}}"><i class="fa"></i> Consultar Aeronave</a></li>
+                        <li><a href="{{route('aeronaves.index')}}"><i class="fa"></i> Consultar Aeronave</a></li>
                     </ul>
                 </li>
                 <li class="treeview">
