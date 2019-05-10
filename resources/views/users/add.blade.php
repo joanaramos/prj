@@ -12,8 +12,8 @@
     @include('users.partials.add-edit')
 
     <div class="form-group">
-        <button type="submit" class="btn btn-success" name="ok">Adicionar</button>
-        <a type="submit" class="btn btn-default" href="{{route('users.index')}}">Cancelar</a>
+        <button type="submit" class="btn btn-success" name="ok" style="margin-bottom: 15px">Adicionar</button>
+        <a type="submit" class="btn btn-default" href="{{route('users.index')}}" style="margin-bottom: 15px">Cancelar</a>
     </div>
 </form>
 @endsection

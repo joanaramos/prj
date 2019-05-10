@@ -240,7 +240,17 @@
               <li><a href="{{route('users.index')}}"><i class="fa"></i> Consultar Utilizadores</a></li>
             </ul>
           </li>
-
+          <li class="treeview">
+            <a>
+              <i class="fa fa-dashboard"></i> <span>Movimentos</span>
+              <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+              <ul class="treeview-menu">
+                <li><a href="{{route('movimentos.create')}}"><i class="fa"></i> Adicionar Movimento</a></li>
+              </ul>
+          </li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -265,7 +275,7 @@
   <!-- /.content-wrapper -->
 
   <footer class="main-footer">
-
+     Aerodromo FlightClub
   </footer>
 
 <!-- ./wrapper -->

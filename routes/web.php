@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 //Rotas para user
 Route::get('users', 'UserController@index')->name('users.index');
-Route::get('create', 'UserController@create')->name('users.create');
+Route::get('users/create', 'UserController@create')->name('users.create');
 Route::post('users', 'UserController@store')->name('users.store');
 Route::get('users/{user}/edit', 'UserController@edit')->name('users.edit');
 Route::put('users/{user}', 'UserController@update')->name('users.update');
@@ -36,7 +36,7 @@ Route::delete('aeronaves/{aeronave}', 'AeronaveController@destroy')->name('aeron
 //-----------------------------------------------------------------------------------
 //Rotas para Movimentos
 
-
+Route::get('movimentos/create','MovimentoController@create')->name("movimentos.create");
 
 //----------------------------------------------------------------------------------------------
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
