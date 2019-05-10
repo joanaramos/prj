@@ -210,6 +210,8 @@
 @endif
 
 ---------------------------------------> CASO O VOO SEJA DE INSTRUCAO
+<div id="VooInstrucao">
+
 
 <div class="form-group">
     <label for="inputTipoInstrucao">Tipo de Instrução</label>
@@ -232,7 +234,7 @@
 
 </div>
 
-
+</div>
 
 
 
