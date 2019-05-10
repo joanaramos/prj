@@ -14,6 +14,12 @@ class Movimento extends Model
 
 
     protected $fillable = [
+        'data','hora_descolagem','hora_aterragem',
+        'num_diario','num_servico',
+    ];
 
+    protected $casts = [
+        'hora_descolagem' => 'datetime',
+        'hora_aterragem' => 'datetime',
     ];
 }
