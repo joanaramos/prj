@@ -14,6 +14,7 @@ class Movimento extends Model
 
 
     protected $fillable = [
+        pla
 
     ];
 }
