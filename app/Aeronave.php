@@ -19,7 +19,8 @@ class Aeronave extends Model
     public $incrementing = false;
 
     protected $fillable = [
-        'matricula', 'marca', 'modelo'
+        'matricula', 'marca', 'modelo',
+        'num_lugares','conta_horas','preco_hora',
     ];
 
 
