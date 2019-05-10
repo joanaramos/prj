@@ -44,7 +44,7 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Auth::routes();
 
 Route::get('/home', function() {
-    return view ('dashboard');
+    return view ('master');
 });
 Route::get('/add', function() {
     return view ('add');
